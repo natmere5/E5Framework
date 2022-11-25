@@ -1,0 +1,20 @@
+{
+	"WorkFlowToExecute":"Download Work Item Details",
+    "ExpectedReportFormat":"TABLE",
+	"ACMEWebURL": "https://acme-test.uipath.com/login",
+	"ACMECredentialAssetName": "ACMELoginCredentials_Priyanka",
+	"RequiredYearAssetName": "ACME_YearRequired",
+	"OutputFileFolderPath": "D:\\Users\\thillai.maharajan\\Documents\\New Joinees Training\\Priyanka Chandran E5\\DownloadWorkItemDetails\\Data",
+	"GmailLoginAsset":"Gmail_Login_Credential_Priyanka",
+	"EmailReceipients": "priyanka.chandran@e5.ai",
+	"BotSuccessStatus" : "Success",
+    "BotFailedStatus" : "Failed",
+    "E5Hook_URL" : "E5Hook_Url",
+    "E5HookCredential" : "E5 Training",
+    "E5ProcessName" : "Download Work Item Details",
+    "E5TaskName" : "Download Work Item Details",
+	"FailedDownloadStatus" : "Not Download",
+    "SuccessDownloadStatus" : "Download Completed"
+   
+	
+}
