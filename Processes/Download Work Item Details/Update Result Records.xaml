@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>848,4865</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>848,4971</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessResult_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
@@ -77,7 +77,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Process the RecordList in SPA Run History and Overview Graph Presentation." DisplayName="Process_Results" sap:VirtualizedContainerService.HintSize="781,4800" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence sap2010:Annotation.AnnotationText="Process the RecordList in SPA Run History and Overview Graph Presentation." DisplayName="Process_Results" sap:VirtualizedContainerService.HintSize="781,4906" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="ResultRecords" Modifiers="ReadOnly" Name="RESULT_RECORDS" />
       <Variable x:TypeArguments="ui:GenericValue" Name="SummaryInfoJSON" />
@@ -148,7 +148,7 @@
           <eus:Get_Generic_Value DisplayName="Get Summary Info" ErrorOnKeyMiss="True" sap:VirtualizedContainerService.HintSize="284,132" sap2010:WorkflowViewState.IdRef="Get_Generic_Value_4" Key="[SUMMARY_INFO]" Value="[SummaryInfoJSON]" __Prefix="[IO.Directory.GetCurrentDirectory]" />
         </TryCatch.Try>
         <TryCatch.Catches>
-          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -165,7 +165,7 @@
         </TryCatch.Catches>
       </TryCatch>
     </Sequence>
-    <Sequence DisplayName="Construct ResultsRecord and Summary" sap:VirtualizedContainerService.HintSize="739,4401" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="Construct ResultsRecord and Summary" sap:VirtualizedContainerService.HintSize="739,4507" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -565,7 +565,7 @@
         </ui:MultipleAssign>
         <eus:Set_Generic_Value DisplayName="Store Summary Info" sap:VirtualizedContainerService.HintSize="431,134" sap2010:WorkflowViewState.IdRef="Set_Generic_Value_4" Key="[SUMMARY_INFO]" Value="[SummaryInfoJSON]" __Prefix="[IO.Directory.GetCurrentDirectory]" />
       </Sequence>
-      <Sequence DisplayName="Updating Summary Result" sap:VirtualizedContainerService.HintSize="697,1812" sap2010:WorkflowViewState.IdRef="Sequence_15">
+      <Sequence DisplayName="Updating Summary Result" sap:VirtualizedContainerService.HintSize="697,1918" sap2010:WorkflowViewState.IdRef="Sequence_15">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:String[]" Name="FieldNames" />
           <Variable x:TypeArguments="ui:GenericValue" Name="SummaryInfo" />
@@ -585,7 +585,7 @@
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <TryCatch DisplayName="Get Summary Info" sap:VirtualizedContainerService.HintSize="655,1720" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+        <TryCatch DisplayName="Get Summary Info" sap:VirtualizedContainerService.HintSize="655,1826" sap2010:WorkflowViewState.IdRef="TryCatch_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -593,7 +593,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <TryCatch.Try>
-            <Sequence sap:VirtualizedContainerService.HintSize="617,1488" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <Sequence sap:VirtualizedContainerService.HintSize="617,1594" sap2010:WorkflowViewState.IdRef="Sequence_17">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -675,20 +675,20 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:MultipleAssign>
-              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Iterates each Fieldnames for the array and assign the value to it." DisplayName="For Each" sap:VirtualizedContainerService.HintSize="575,458" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[FieldNames]">
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Iterates each Fieldnames for the array and assign the value to it." DisplayName="For Each" sap:VirtualizedContainerService.HintSize="575,564" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[FieldNames]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:String">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:String" Name="item" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="539,302" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="539,408" sap2010:WorkflowViewState.IdRef="Sequence_16">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[item.ToString.ToLower]" sap:VirtualizedContainerService.HintSize="497,210" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[item.ToString.ToLower]" sap:VirtualizedContainerService.HintSize="497,316" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -711,7 +711,7 @@
                             <InArgument x:TypeArguments="njl:JToken">[Success]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign x:Key="failed" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign x:Key="failure" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
                             <OutArgument x:TypeArguments="njl:JToken">[SummaryResult("failed")]</OutArgument>
                           </Assign.To>

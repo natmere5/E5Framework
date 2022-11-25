@@ -3,13 +3,17 @@
   "description": "Download the report file from any application and upload it to Storage services(S3 Bucket)",
   "main": "Main.xaml",
   "dependencies": {
-    "Download.Work.Item.Details_Library": "[1.0.9]",
+    "Download.Work.Item.Details_Library": "[1.0.11]",
+    "Element5.Core": "[1.2.25]",
     "Element5.MyUnity": "[2.5.64]",
     "Element5.WellSky": "[3.0.27]",
     "UiPath.AmazonWebServices.Activities": "[1.2.5]",
     "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.Mail.Activities": "[1.12.3]",
+    "UiPath.OCR.Activities": "[3.11.0]",
     "UiPath.System.Activities": "[21.10.3]",
-    "UiPath.UIAutomation.Activities": "[21.10.4]"
+    "UiPath.UIAutomation.Activities": "[21.10.4]",
+    "UiPath.WebAPI.Activities": "[1.13.2]"
   },
   "webServices": [],
   "entitiesStores": [],
