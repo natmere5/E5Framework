@@ -3,7 +3,7 @@
   "description": "Download the report file from any application and upload it to Storage services(S3 Bucket)",
   "main": "Main.xaml",
   "dependencies": {
-    "Download.Work.Item.Details_Library": "[1.0.31]",
+    "Download.Work.Item.Details_Library": "[1.1.0]",
     "Element5.Core": "[1.2.25]",
     "Element5.MyUnity": "[2.5.64]",
     "Element5.WellSky": "[3.0.27]",
